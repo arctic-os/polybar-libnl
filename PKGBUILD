@@ -1,5 +1,5 @@
 # Maintainer: Patrick Ziegler <p.ziegler96@gmail.com>
-pkgname=polybar-libnl
+pkgname=polybar-wireless
 pkgorg=polybar
 pkgver=3.5.7
 pkgrel=1
@@ -27,7 +27,7 @@ prepare() {
 build() {
   cd "${_dir}/build" || exit 1
   # Force cmake to use system python (to detect xcbgen)
-  cmake -DWITH_LIBNL=ON -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 ..
+  cmake -DWITH_LIBNL=OFF -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release -DPYTHON_EXECUTABLE=/usr/bin/python3 ..
   cmake --build .
 }
 
