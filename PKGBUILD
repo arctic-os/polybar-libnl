@@ -2,12 +2,12 @@
 pkgname=polybar-wireless
 pkgorg=polybar
 pkgver=3.5.7
-pkgrel=1
+pkgrel=2
 pkgdesc="A fast and easy-to-use status bar"
 arch=("i686" "x86_64")
 url="https://github.com/polybar/polybar"
 license=("MIT")
-depends=("cairo" "xcb-util-image" "xcb-util-wm" "xcb-util-xrm" "xcb-util-cursor"
+depends=("cairo" "wireless_tools" "xcb-util-image" "xcb-util-wm" "xcb-util-xrm" "xcb-util-cursor"
          "alsa-lib" "libpulse" "libmpdclient" "libnl" "jsoncpp" "curl")
 optdepends=("i3-wm: i3 module support"
             "ttf-unifont: Font used in example config"
