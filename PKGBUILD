@@ -1,8 +1,8 @@
 # Maintainer: Patrick Ziegler <p.ziegler96@gmail.com>
 pkgname=polybar-wireless
 pkgorg=polybar
-pkgver=3.5.7
-pkgrel=2
+pkgver=3.6.2
+pkgrel=1
 pkgdesc="A fast and easy-to-use status bar"
 arch=("i686" "x86_64")
 url="https://github.com/polybar/polybar"
