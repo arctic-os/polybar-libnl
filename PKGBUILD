@@ -1,13 +1,13 @@
 # Maintainer: Patrick Ziegler <p.ziegler96@gmail.com>
 pkgname=polybar-wireless
 pkgorg=polybar
-pkgver=3.6.2
+pkgver=3.6.3
 pkgrel=1
 pkgdesc="A fast and easy-to-use status bar"
 arch=("i686" "x86_64")
 url="https://github.com/polybar/polybar"
 license=("MIT")
-depends=("cairo" "wireless_tools" "xcb-util-image" "xcb-util-wm" "xcb-util-xrm" "xcb-util-cursor"
+depends=("libuv" "cairo" "wireless_tools" "xcb-util-image" "xcb-util-wm" "xcb-util-xrm" "xcb-util-cursor"
          "alsa-lib" "libpulse" "libmpdclient" "libnl" "jsoncpp" "curl")
 optdepends=("i3-wm: i3 module support"
             "ttf-unifont: Font used in example config"
@@ -17,7 +17,7 @@ makedepends=("cmake" "python" "pkg-config" "python-sphinx" "python-packaging" "i
 conflicts=("polybar-git" "polybar")
 install="${pkgname}.install"
 source=(${url}/releases/download/${pkgver}/${pkgorg}-${pkgver}.tar.gz)
-sha256sums=('73210e6d74217acb953b253990b4302343b7b6a7870fe1da9a1855daa44123db')
+sha256sums=('f25758573567208fc7b6f4d4115a6117a87389cbcc094cf605d079775be95fa5')
 _dir="${pkgorg}-${pkgver}"
 
 prepare() {
